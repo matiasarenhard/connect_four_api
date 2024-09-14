@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  result: MyString
+  player_one: MyString
+  color_player_one: MyString
+  player_two: MyString
+  color_player_two: MyString
+
+two:
+  result: MyString
+  player_one: MyString
+  color_player_one: MyString
+  player_two: MyString
+  color_player_two: MyString
