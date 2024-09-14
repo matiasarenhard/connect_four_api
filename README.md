@@ -1,7 +1,18 @@
 # connect_four_api
 
-### build 
+### Prerequisites
+Make sure you have the following installed:
+- [ASDF](https://asdf-vm.com/guide/getting-started.html)
+- [Ruby](https://gorails.com/setup/ubuntu/22.04#ruby) 3.3.0
+- [Rails](https://gorails.com/setup/ubuntu/22.04#rails) 7.1.3
+- [PostgreSQL](https://gorails.com/setup/ubuntu/22.04#database)
 
+### Build Steps
+```bash
+bundle install
+bin/rails db:create db:migrate db:seed
+bin/rails s
+```
 
 ### endpoints 
 
