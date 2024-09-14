@@ -20,6 +20,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
+  username: <%= ENV['USERNAME_DATABASE'] %>
+  password: <%= ENV['PASSWORD_DATABASE'] %>
+  host: localhost
   <<: *default
   database: connect_four_api_development
 
@@ -27,7 +30,7 @@ development:
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: connect_four_api
+  #username: flowskaterock_ecommerce
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -54,6 +57,9 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
+  username: <%= ENV['USERNAME_DATABASE'] %>
+  password: <%= ENV['PASSWORD_DATABASE'] %>
+  host: localhost
   <<: *default
   database: connect_four_api_test
 
@@ -80,5 +86,5 @@ test:
 production:
   <<: *default
   database: connect_four_api_production
-  username: connect_four_api
-  password: <%= ENV["CONNECT_FOUR_API_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: postgres
