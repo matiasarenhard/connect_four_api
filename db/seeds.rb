@@ -3,6 +3,7 @@ PLAYER_ONE = "John"
 COLOR_PLAYER_ONE = "Red"
 PLAYER_TWO = "Jane"
 COLOR_PLAYER_TWO = "Yellow"
+KIND_GAMES = ["connect_four", "tic_tac_toe"]
 
 def create_game_with_movements(game_params, movements)
   game = Game.create!(game_params)
@@ -14,12 +15,16 @@ NUM_GAMES.times do
     player_one: PLAYER_ONE,
     color_player_one: COLOR_PLAYER_ONE,
     player_two: PLAYER_TWO,
-    color_player_two: COLOR_PLAYER_TWO
+    color_player_two: COLOR_PLAYER_TWO,
+    kind: KIND_GAMES.sample
   }
 
+  grid_range = game_params[:kind] == "connect_four" ? (0..6) : (0..3)
+  available_positions = grid_range.to_a.product(grid_range.to_a).shuffle
+
   game_movements = [
-    { player: PLAYER_ONE, row: 0, column: 0 },
-    { player: PLAYER_TWO, row: 1, column: 1 }
+    { player: PLAYER_ONE, row: available_positions.pop[0], column: available_positions.pop[1] },
+    { player: PLAYER_TWO, row: available_positions.pop[0], column: available_positions.pop[1] }
   ]
 
   create_game_with_movements(game_params, game_movements)
