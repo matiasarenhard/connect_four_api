@@ -1,6 +1,28 @@
 # connect_four_api
+### Stack
+- **Ruby**: 3.3.0  
+- **Rails**: 7.1.3  
+- **PostgreSQL**: 16.3
 
-### build 
+### Prerequisites
+Make sure you have the following installed:
+
+- [ASDF](https://asdf-vm.com/guide/getting-started.html)
+- [Ruby](https://gorails.com/setup/ubuntu/22.04#ruby) 3.3.0
+- [Rails](https://gorails.com/setup/ubuntu/22.04#rails) 7.1.3
+- [PostgreSQL](https://gorails.com/setup/ubuntu/22.04#database): 16.3
+
+### Setup Instructions
+1. **Install the prerequisites** as described above.
+2. **Create a `.env` file** based on the provided `env-sample` file. Configure your database credentials accordingly.
+3. **Follow the build steps** outlined below to set up your environment.
+
+### Build Steps
+```bash
+bundle install
+bin/rails db:create db:migrate db:seed
+bin/rails s
+```
 
 
 ### endpoints 
