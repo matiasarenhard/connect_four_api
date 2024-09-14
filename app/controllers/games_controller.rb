@@ -10,7 +10,14 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
-    render json: @game
+    movements = @game.game_movements.map do |movement|
+      {
+        player: movement.player,
+        row: movement.row,
+        column: movement.column
+      }
+    end
+    render json: { game: @game, movements: movements  }
   end
 
   # POST /games
