@@ -1,5 +1,5 @@
 # connect_four_api
-Repositório back-end da solução **Morcego Games**, projeto foi construído por:</br>
+Repositório do back-end da solução **Morcego Games**, desenvolvido por:</br>
 Allan Escher, André Dorr, Diego Morgenstern, Ivanilson Silva, Marlon Miguel, Matias Arenhard.</br>
 
 ### Tecnologias Utilizadas
