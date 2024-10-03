@@ -103,7 +103,7 @@ GET: http://localhost:3000/games/1
 }
 ```
 
-### Listar todos os jogos
+#### Listar todos os jogos
 GET: http://localhost:3000/games
 <br/>result:
 ```
