@@ -16,7 +16,7 @@ Certifique-se de ter instalado:
 
 ### Instruções de Configuração
 1. **Instale os pré-requisitos** conforme descrito acima.
-2. Crie um arquivo **.env** com base no arquivo **env-sample** fornecido. Configure suas credenciais de banco de dados de acordo.
+2. Crie um arquivo **.env** a partir do **env-sample** que está na raiz do projeto, preencha os valores correspondentes para cada variável de ambiente.
 3. Na pasta do projeto(**connect_four_api**), execute os comandos descritos abaixo para configurar o seu ambiente:
 
 ### Comandos para configuração do projeto
