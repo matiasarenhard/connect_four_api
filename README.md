@@ -35,7 +35,7 @@ bin/rails s
 
 #### Novo jogo
 POST: http://localhost:3000/games  
-<br/>parametros:
+<br/>parâmetros:
 ```
 {
   "game": {
@@ -63,7 +63,7 @@ resultado:
 ```
 #### Atualizando jogo
 PATCH: http://localhost:3000/games/1
-<br/>parametros:
+<br/>parâmetros:
 ```
 {
   "game": {
@@ -105,7 +105,7 @@ GET: http://localhost:3000/games/1
 
 #### Listar todos os jogos
 GET: http://localhost:3000/games
-<br/>result:
+<br/>resultado:
 ```
 [
     {
