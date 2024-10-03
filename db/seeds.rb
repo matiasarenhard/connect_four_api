@@ -1,8 +1,8 @@
 NUM_GAMES = 5
 PLAYER_ONE = "John"
-COLOR_PLAYER_ONE = "Red"
+IMAGE_PLAYER_ONE = "Red"
 PLAYER_TWO = "Jane"
-COLOR_PLAYER_TWO = "Yellow"
+IMAGE_PLAYER_TWO = "Yellow"
 KIND_GAMES = ["connect_four", "tic_tac_toe"]
 
 def create_game_with_movements(game_params, movements)
@@ -13,9 +13,9 @@ end
 NUM_GAMES.times do
   game_params = {
     player_one: PLAYER_ONE,
-    color_player_one: COLOR_PLAYER_ONE,
+    image_player_one: IMAGE_PLAYER_ONE,
     player_two: PLAYER_TWO,
-    color_player_two: COLOR_PLAYER_TWO,
+    image_player_two: IMAGE_PLAYER_TWO,
     kind: KIND_GAMES.sample
   }
 
