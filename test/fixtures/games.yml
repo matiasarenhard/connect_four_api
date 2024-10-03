@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  result: MyString
-  player_one: MyString
-  color_player_one: MyString
-  player_two: MyString
-  color_player_two: MyString
+  result: Raddhan
+  player_one: Raddhan
+  image_player_one: Coringa.png
+  player_two: Malenia
+  image_player_two: batman.png
 
 two:
-  result: MyString
-  player_one: MyString
-  color_player_one: MyString
-  player_two: MyString
-  color_player_two: MyString
+  result: Godfrey
+  player_one: Godfrey
+  image_player_one: Coringa.png
+  player_two: Rennala
+  image_player_two: batman.png

@@ -1,8 +1,8 @@
 NUM_GAMES = 5
 PLAYER_ONE = "John"
-IMAGE_PLAYER_ONE = "Red"
+IMAGE_PLAYER_ONE = "batman.png"
 PLAYER_TWO = "Jane"
-IMAGE_PLAYER_TWO = "Yellow"
+IMAGE_PLAYER_TWO = "Coringa.png"
 KIND_GAMES = ["connect_four", "tic_tac_toe"]
 
 def create_game_with_movements(game_params, movements)
